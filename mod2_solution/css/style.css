@@ -1,5 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 section { 
     display: block;
+
     background-color: grey;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
