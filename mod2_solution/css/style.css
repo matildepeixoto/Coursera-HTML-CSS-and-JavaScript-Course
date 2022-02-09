@@ -3,17 +3,10 @@
 }
 
 .menu {
-	float: left;
-	margin-right: 1.5%;
-    margin-bottom: 1.5%;
+	margin: 1%;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #B0C4DE;
-    text-align: center;
-    border: 1px solid;
-}
-
-.menu:last-child {
-	margin-right: 0;
+    border: 1px solid black;
 }
 
 h1 {
@@ -25,18 +18,21 @@ h1 {
 }
 
 h2 {
-    margin-left: 75%;
-    margin-right: 0;
     margin-top: 0;
-    width: 25%;
+    width: 100px;
+    float: right;
     border: 1px solid black;
+    border-right: 0;
+    border-top: 0;
     color: white;
     font-size: 125%;
+    text-align: center;
 }
 
 p {
     padding-left: 1%;
     padding-right: 1%;
+    clear: right;
 }
 
 #chicken {
@@ -54,26 +50,26 @@ p {
 /*Desktop version*/
 @media (min-width: 992px) {
     .menu {
-        width: 32.33%;
+        width: 31.33%;
+        float: left;
     }
 }
 
 /*Tablet version*/
 @media (min-width: 768px) and (max-width: 991px) {   
     .menu {
-        width: 48.5%;
-    }
-    .menu:nth-child(2) {
-        margin-right: 0;
+        width: 48%;
+        float: left;
     }
     .menu:last-child {
-        width: 100%;
+        width: 98%;
     }
 }
 
 /*Mobile version*/
 @media (max-width: 767px) {
     .menu {
-        width: 100%;
+        width: 98%;
+        float: left;
     }
 }
